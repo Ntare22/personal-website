@@ -1,11 +1,15 @@
 import React from 'react';
 import Navbar from './components/Navbar'
+import MainContent from './components/mainContent'
 import './components/styles/main.scss'
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <div className='main'>
+      <React.Fragment>
+        <Navbar />
+        <MainContent />
+      </React.Fragment>
     </div>
   )
 }

@@ -6,3 +6,26 @@ $secondary-color: #F6F6F6;
   margin: 0;
   padding: 0;
 }
+
+@mixin flexCenter($direction, $align) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin desktop {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin mobile-tablet {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
