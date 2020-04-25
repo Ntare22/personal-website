@@ -1,8 +1,9 @@
 @import './_config';
+@import './_variables';
 
-body {
-  background-color: $primary-color;
-  height: 100vh;
+
+.main {
+  @include flexCenter(row, null);
   font-family: 'Montserrat', sans-serif;
   line-height: 1;
 }
@@ -12,3 +13,10 @@ a {
   color: #000000;
 }
 
+.main-content {
+  @include flexCenter(column, null);
+  padding-top: 5rem;
+  margin-left: -3rem;
+  width: 890px;
+
+}

@@ -1,0 +1,115 @@
+@import './_config';
+@import './_variables';
+@import './_functions';
+
+.nav-bar {
+  @include desktop {
+    position: fixed;
+    width: 940.6px;
+    background-color: #ffffff;
+    z-index: 2;
+    padding-top: 1.5rem;
+  
+    #{&}_items {
+      padding-left: 2%;
+    }
+  
+    #{&}_item {
+      font-weight: weight(bold);
+      padding: 4%;
+      color: #828282;
+  
+      &:hover {
+        color: #000000;
+      }
+  
+      &:focus {
+        color: #000000;
+      }
+    }
+  }
+  @include mobile-tablet {
+    position: fixed;
+    width: 940.6px;
+    background-color: #ffffff;
+    z-index: 2;
+    padding-top: 1.5rem;
+
+    #{&}_items {
+      display: none;
+    }
+  
+    #{&}_item {
+      display: none;
+    }
+  }
+}
+
+
+.heading-separator {
+  @include desktop {
+    width: 90%;
+    margin-top: 2.5%;
+    border: 1px solid #828282;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  @include mobile-tablet {
+    display: none;
+  }
+}
+
+
+.nav-btn {
+  @include mobile-tablet {
+    top: 3rem;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 1;
+    right: 4rem;
+    height: 50px;
+    width: 82px;
+    cursor: pointer;
+    @include transition-ease;
+  
+    &_burger {
+      position: absolute;
+      right: 0;
+      top: 0.7rem;
+      width: 82px;
+      height: 10px;
+      background-color: #000000;
+      @include transition-ease;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -19px;
+        width: 82px;
+        height: 10px;
+        background-color: #000000;
+        @include transition-ease;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 19px;
+        width: 82px;
+        height: 10px;
+        background-color: #000000;
+        @include transition-ease;
+      }
+      &.open {
+        transform: rotate(720deg);
+        background-color: transparent;
+  
+        &::before {
+          transform: rotate(45deg) translate(16px, 14px);
+        } 
+  
+        &::after {
+          transform: rotate(-45deg) translate(11px, -12px);
+        }
+      }
+    }
+  }
+}
+

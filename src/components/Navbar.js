@@ -1,30 +1,38 @@
-import React from 'react';
-import '../components/styles/main.scss'
+import React, { useState } from 'react';
+import '../components/styles/header.scss';
+import Hamburger from './hamburger'
+
+
 
 const Navbar = () => {
+  const [showBtn, setShowBtn] = useState(false);
+  const handleClick = () => {
+    const hamburger = document.querySelector('.nav-btn_burger')
+    if (!showBtn) {
+      hamburger.classList.add('open');
+      setShowBtn(!showBtn);
+    } 
+    if (showBtn) {
+      hamburger.classList.remove('open');
+      setShowBtn(!showBtn);
+    }
+  }
+
   return (
-    <header className='nav-bar'>
-      <ul>
-        <li>
-          <a href='//#region'>Home</a>
-        </li>
-        <li>
-          <a href='//#region'>About Me</a>
-        </li>
-        <li>
-          <a href='//#region'>Skills</a>
-        </li>
-        <li>
-          <a href='//#region'>Portfolio</a>
-        </li>
-        <li>
-          <a href='//#region'>Contact</a>
-        </li>
-        <li>
-          <a href='//#region'>Blog</a>
-        </li>
-      </ul>
-    </header>
+    <React.Fragment>
+      <div className='nav-bar'>
+        <Hamburger onClick={handleClick}/>
+        <section className='nav-bar_items'>
+          <a href='//#region' className='nav-bar_item'>Home</a>
+          <a href='//#region' className='nav-bar_item'>About Me</a>
+          <a href='//#region' className='nav-bar_item'>Skills</a>
+          <a href='//#region' className='nav-bar_item'>Portfolio</a>
+          <a href='//#region' className='nav-bar_item'>Contact</a>
+          <a href='//#region' className='nav-bar_item'>Blog</a>
+        </section>
+        <hr className='heading-separator'/>
+      </div>
+    </React.Fragment>
   );
 }
 
