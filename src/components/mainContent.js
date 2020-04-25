@@ -1,20 +1,9 @@
 import React from 'react';
-import Intro from './Intro'
+import Intro from './sections/Intro'
 
 const mainContent = () => {
   return (
     <div className='main-content'>
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
       <Intro />
     </div>
   );
