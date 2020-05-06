@@ -23,8 +23,8 @@ const Navbar = () => {
       <div className='nav-bar'>
         <Hamburger onClick={handleClick}/>
         <section className='nav-bar_items'>
-          <a href='//#region' className='nav-bar_item'>Home</a>
-          <a href='//#region' className='nav-bar_item'>About Me</a>
+          <a href='#intro-section' className='nav-bar_item'>Home</a>
+          <a href='#about-section' className='nav-bar_item'>About Me</a>
           <a href='//#region' className='nav-bar_item'>Skills</a>
           <a href='//#region' className='nav-bar_item'>Portfolio</a>
           <a href='//#region' className='nav-bar_item'>Contact</a>
