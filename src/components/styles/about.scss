@@ -1,0 +1,41 @@
+@import './_config';
+@import './_variables';
+@import './_functions';
+
+
+#about-section {
+  background-color: $secondary-color;
+  margin-top: 1rem;
+  height: 32rem;
+}
+
+.about {
+  @include desktop {
+    @include flexCenter(column, null, null);
+    padding: 5rem 19rem;
+    text-align: center;
+  
+    #{&}_heading {
+      font-size: 34px;
+    }
+    
+    #{&}_text {
+      padding-top: 3rem;
+      font-size: 20px;
+    }
+  }
+
+  @include mobile-tablet {
+    padding: 3rem 4rem;
+    text-align: center;
+
+    #{&}_heading {
+      font-size: 40px;
+    }
+    
+    #{&}_text {
+      padding-top: 3rem;
+      font-size: 30px;
+    }
+  }
+}
