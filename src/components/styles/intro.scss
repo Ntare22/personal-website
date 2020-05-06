@@ -1,0 +1,61 @@
+@import './_config';
+@import './_variables';
+@import './_functions';
+
+#intro-section {
+  background-color: $primary-color;
+}
+
+.intro {
+  @include desktop {
+    @include flexCenter(row, null, null);
+    padding-left: 16rem;
+
+    #{&}_name {
+      font-size: 40px;
+      font-weight: weight(bold);
+    }
+
+    #{&}_description {
+      font-size: 1rem;
+      margin-left: 6rem;
+      padding-top: 1.5rem;
+    }
+  }
+
+  @include mobile-tablet {
+    @include flexCenter(column, null, null);
+
+    margin-left: 4rem;
+
+    #{&}_name {
+      font-size: 80px;
+      font-weight: weight(bold);
+    }
+
+    #{&}_description {
+      font-size: 2rem;
+      padding-top: 1.5rem;
+    }
+  }
+}
+
+.img-container {
+  @include desktop {
+    height: 22rem;
+    width: auto;
+    background: red;
+    margin-left: 16rem;
+    margin-right: 22rem;
+    margin-top: 1rem;
+  }
+
+  @include mobile-tablet{
+    height: 80rem;
+    width: auto;
+    background: red;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+  }
+}

@@ -1,9 +1,8 @@
 @import './_config';
 @import './_variables';
 
-
 .main {
-  @include flexCenter(row, null);
+  @include flexCenter(row, null, center);
   font-family: 'Montserrat', sans-serif;
   line-height: 1;
 }
@@ -14,9 +13,7 @@ a {
 }
 
 .main-content {
-  @include flexCenter(column, null);
+  @include flexCenter(column, null, null);
   padding-top: 5rem;
-  margin-left: -3rem;
-  width: 890px;
-
+  width: 90rem;
 }

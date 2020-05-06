@@ -7,9 +7,9 @@ $secondary-color: #F6F6F6;
   padding: 0;
 }
 
-@mixin flexCenter($direction, $align) {
+@mixin flexCenter($direction, $align, $justify-content) {
   display: flex;
-  justify-content: center;
+  justify-content: $justify-content;
   flex-direction: $direction;
   align-items: $align;
 }
@@ -19,13 +19,13 @@ $secondary-color: #F6F6F6;
 }
 
 @mixin desktop {
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
 
 @mixin mobile-tablet {
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }
