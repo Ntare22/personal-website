@@ -21,13 +21,18 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      }
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
+      },
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      favicon: './src/assets/favicon.png'
     })
   ]
 };

@@ -1,6 +1,7 @@
 @import './_config';
 @import './_variables';
 @import './_functions';
+// @import '../../assets/imgdsktp.jpg';
 
 #intro-section {
   background-color: $primary-color;
@@ -40,11 +41,20 @@
   }
 }
 
+.intro-img {
+  height: 28.8rem;
+  margin-left: 16rem;
+  margin-right: 22rem;
+  margin-top: 1rem;
+}
+
 .img-container {
   @include desktop {
-    height: 22rem;
+    height: 33rem;
     width: auto;
-    background: #272727;
+    background: url('../../assets/imgdsktp-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     margin-left: 16rem;
     margin-right: 22rem;
     margin-top: 1rem;
@@ -53,7 +63,7 @@
   @include mobile-tablet{
     height: 80rem;
     width: auto;
-    background: red;
+    background: url('../../assets/imgsm-min.jpg') no-repeat;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 2rem;
