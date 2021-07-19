@@ -1,17 +1,21 @@
-import React from 'react';
-import Navbar from './components/navbar/Navbar'
-import MainContent from './components/mainContent'
-import './components/styles/main.scss'
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Intro from "./components/Intro";
+import NavBar from "./components/NavBar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
-const App = () => {
+function App() {
   return (
-    <div className='main'>
-      <React.Fragment>
-        <Navbar />
-        <MainContent />
-      </React.Fragment>
+    <div className="App">
+      <NavBar />
+      <Intro />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
-  )
+  );
 }
 
 export default App;
