@@ -1,9 +1,17 @@
+import { Trans } from 'react-i18next';
+
 const Contact = () => {
     return (
         <div id='contact'>
-            <p>Get in Contact</p>
-            <p>Want to know more or just chat? <br />You are Welcome</p>
-            <button>Send Message</button>
+            <p>
+                <Trans i18nKey='contact.heading'>Get in Contact</Trans>
+            </p>
+            <p>
+                <Trans i18nKey='contact.text'>Want to know more or just chat? <br />You are Welcome</Trans>
+            </p>
+            <button>
+                <Trans i18nKey='contact.button'>Send Message</Trans>
+            </button>
             <span>
                 <a href='https://www.linkedin.com/in/jimntare/'>linkedin</a>
                 <a href='https://www.instagram.com/jim.ntare/'>Instagram</a>
