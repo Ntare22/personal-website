@@ -21,13 +21,13 @@ i18n
         translation: {
           nav: {
               home: 'Home',
-              about: 'About Me',
+              about: 'About me',
               skills: 'Skills',
               projects: 'Projects',
               contact: 'Contact'
           },
           intro: {
-              text: 'Full Stack Software Engineer / Blogger / Amateur Athlete / Speaker <br />26 Years Old, Kigali'
+              text: 'Software Engineer / Blogger / Speaker <br />26 Years Old, Kigali'
           },
           about: {
             heading: 'About me',
@@ -38,16 +38,19 @@ i18n
           },
           skills: {
               heading: 'Skills',
-              text: 'I work with technologies including',
+              text: 'I work with technologies including,',
               download: 'Download Resume'
           },
           projects: {
             heading: 'Projects'
           },
           contact: {
-              heading: 'Get in Contact',
+              heading: 'Contact',
               text: 'Want to know more or just chat? <br />You are Welcome',
-              button: 'Send Message'
+              button: 'Send Message',
+              message: 'Connect & Follow me on <br /> LinkedIn, Instagram, Twitter, Github',
+              cancel: 'Cancel',
+              send: 'Send Message'
           }
         }
       },
@@ -55,13 +58,13 @@ i18n
         translation: {
           nav: {
               home: 'Accueil',
-              about: 'à propos de moi',
+              about: 'A propos de moi',
               skills: 'Compétences',
-              projects: 'projets',
+              projects: 'Projets',
               contact: 'Contacter'
           },
           intro: {
-              text: 'Ingénieur Informaticien / Blogueur / Athlète amateur / Conférencier <br /> 26 ans, Kigali'
+              text: 'Ingénieur Informaticien / Blogueur / Conférencier <br /> 26 ans, Kigali'
           },
           about: {
             heading: 'A propos de moi',
@@ -79,10 +82,13 @@ i18n
             heading: 'Projets'
           },
           contact: {
-            heading: 'Entrer en contact',
+            heading: 'Contacter',
             text: 'Vous voulez en savoir plus ou simplement discuter? <br />Vous êtes les bienvenus',
-            button: 'Envoyer le message'
-        }
+            button: 'Envoyer le message',
+            message: 'Connectez-vous et suivez-moi sur <br /> LinkedIn, Instagram, Twitter, Github',
+            cancel: 'Cancel',
+            send: 'Send Message'
+          }
         }
       }
     }
