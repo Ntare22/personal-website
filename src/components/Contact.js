@@ -69,9 +69,9 @@ const Contact = () => {
             </div>
           </button>
           <form id='popup' className='hidden' onSubmit={sendMessage}>
-            <div className='bg-white mt-32 mb-32 w-auto opacity-100 shadow bg-black'>
+            <div className='bg-white lg:mt-32 lg:mb-32 w-auto opacity-100 shadow bg-black'>
               <div className='m-60 flex flex-col'>
-                <h1 className='text-left text-2xl font-bold'>Send Message</h1>
+                <h1 className='text-left text-2xl font-bold moto:text-xl'>Send Message</h1>
                 <div className=''>
                   <input type='text' name='name' className='border-2 border-black mt-4 py-3 px-2' placeholder='Name' value={name} onChange={handleName} />
                   <input type='text' name='email' className='border-2 border-black mt-4 py-3 px-6 ml-5' placeholder='Email' value={email} onChange={handleEmail} />

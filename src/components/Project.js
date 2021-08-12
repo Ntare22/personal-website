@@ -1,8 +1,9 @@
-import landscapeImg from '../images/landscape.jpeg'
+import opensource from '../images/opensource.png';
+import kivunoir from '../images/kivunoir.png'
 
 const projects = {
-    opensourcerw: { name: 'Open Source Rwanda', img: landscapeImg,  link: 'nestjs'},
-    kivunoir: { name: 'Kivu Noir', img: landscapeImg, link: 'widadf'},
+    opensourcerw: { name: 'Open Source Rwanda', img: opensource,  link: 'https://www.opensource.org.rw/'},
+    kivunoir: { name: 'Kivu Noir', img: kivunoir, link: 'https://rw.kivunoir.coffee/'},
 };
 
 const Project = () => {

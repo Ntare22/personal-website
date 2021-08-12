@@ -11,6 +11,7 @@ const Projects = () => {
                 <div className='mt-4'>
                     <Project />
                 </div>
+                <a href='https://github.com/Ntare22' rel="noreferrer" target='_blank' className='font-bold underline'>View More</a>
             </div>
         </div>
     )
