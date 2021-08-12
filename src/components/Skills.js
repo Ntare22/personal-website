@@ -14,11 +14,13 @@ const Skills = () => {
                 <div className='mt-4'>
                     <Skill />
                 </div>
-                <button className='mt-8 border-2 border-black hover:bg-black hover:text-white'>
-                    <div className='m-3'>
-                        <Trans i18nKey='skills.download'>Download Resume</Trans>
-                    </div>
-                </button>
+                <a href='https://drive.google.com/file/d/12KTKyFXm9f75JNnZ5b6h6y1_GFAzEjlZ/view' target='_blank' rel="noreferrer">
+                    <button className='mt-8 border-2 border-black hover:bg-black hover:text-white'>
+                        <div className='m-3'>
+                            <Trans i18nKey='skills.download'>Download Resume</Trans>
+                        </div>
+                    </button>
+                </a>
             </div>
         </div>
     )

@@ -1,17 +1,17 @@
 import { Trans } from 'react-i18next';
-import landscapeImg from '../images/landscape.jpeg'
-import portraitImg from '../images/pic-portrait.jpeg'
+import landscapeImg from '../images/jim-landscape-4.jpg'
+import portraitImg from '../images/jim-potrait-color.jpg'
 
 const Intro = ({ languages }) => {
 
     return (
         <div id='intro' className='bg-white'>
-            <div className='flex md:justify-evenly md:py-8 flex-wrap md:flex-nowrap mt-16 md:mt-32'>
-                <p className='text-4xl font-bold'>Jim <br />Ntare</p>
-                <p className='text-xs lg:text-sm text-left mt-4'>
+            <div className='mt-16 md:p-8 flex md:justify-evenly'>
+                <p className='font-bold text-4xl'>Jim <br />Ntare</p>
+                <p className='md:mt-4 mt-20 -ml-24'>
                     <Trans i18nKey='intro.text'>Full Stack Software Engineer / Blogger / Amateur Athlete / Speaker <br />26 Years Old, Kigali</Trans>
                 </p>
-                <div className='transform -rotate-90 flex my-8 hidden lg:block -ml-24'>
+                <div className='transform -rotate-90 flex my-8 hidden lg:block'>
                     {languages}
                 </div>
             </div>
