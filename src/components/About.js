@@ -11,10 +11,10 @@ const About = () => {
                     <Trans i18nKey='about.para1'>Hi, I'm Jim – Software Engineer / Blogger from Kigali. I'm interested in everything technology and entreprenuership.</Trans>
                 </p>
                 <p className='mt-3'>
-                    <Trans i18nKey='about.para2'>Formerly at Andela, I’m currently a Software Engineer at Bank Of Kigali and contributing to open source and pursuing personal projects.</Trans>
+                    <Trans i18nKey='about.para2'>Formerly at Andela, I’m currently a Software Engineer at Bank Of Kigali; I'm also contributing to open source and pursuing personal projects.</Trans>
                 </p>
                 <p className='mt-3'>
-                    <Trans i18nKey='about.para3'>Hire me to build you a website, moblie application, or speak at your event.</Trans>
+                    <Trans i18nKey='about.para3'>Hire me to build you a website, mobile application, or speak at your event.</Trans>
                 </p>
                 <p className='mt-3'>
                     <Trans i18nKey='about.para4'>Ready to implement excellent projects with wonderful people.</Trans>
